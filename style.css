@@ -7,7 +7,7 @@ body {
   place-items: center center;
 }
 
-.container {
+#loading {
   height: 350px;
   width: 350px;
   position: relative;
@@ -31,7 +31,7 @@ The :nth-child(n) selector matches every element that is the nth child, regardle
 n can be a number, a keyword, or a formula.
 */
 
-.container > div:nth-child(1) {
+#loading > div:nth-child(1) {
   height: 75px;
   width: 75px;
   background-image: linear-gradient(45deg, #f7d000, #e6970e);
@@ -47,7 +47,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(-30px, -30px) scale(0.3);
   }
 }
-.container > div:nth-child(2) {
+#loading > div:nth-child(2) {
   height: 45px;
   width: 45px;
   background-image: linear-gradient(45deg, #00d7f7, #04c0f5);
@@ -63,7 +63,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(15px, -20px) scale(0.55);
   }
 }
-.container > div:nth-child(3) {
+#loading > div:nth-child(3) {
   height: 75px;
   width: 75px;
   background-image: linear-gradient(45deg, #f60180, #f7014f);
@@ -79,7 +79,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(30px, 30px) scale(0.3);
   }
 }
-.container > div:nth-child(4) {
+#loading > div:nth-child(4) {
   height: 45px;
   width: 45px;
   background-image: linear-gradient(45deg, #da00f7, #b501f6);
