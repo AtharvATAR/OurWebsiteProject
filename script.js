@@ -1,3 +1,3 @@
-$(window).on("load",function(){
-    $("#loading").fadeOut("slow");
-  });
+function hide_preloader() {
+	$(".loader").fadeOut(2000);
+}
