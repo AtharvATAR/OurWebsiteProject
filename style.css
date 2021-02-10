@@ -6,32 +6,18 @@ body {
   display: grid;
   place-items: center center;
 }
-
-#loading {
+.loader {
   height: 350px;
   width: 350px;
   position: relative;
   animation: spin 1.5s infinite;
-  visibility: visible;
 }
-
-/*
-The @keyframes rule specifies the animation code.
-The animation is created by gradually changing from one set of CSS styles to another.
-*/
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
-
-/*
-The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
-n can be a number, a keyword, or a formula.
-*/
-
-#loading > div:nth-child(1) {
+.loader > div:nth-child(1) {
   height: 75px;
   width: 75px;
   background-image: linear-gradient(45deg, #f7d000, #e6970e);
@@ -47,7 +33,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(-30px, -30px) scale(0.3);
   }
 }
-#loading > div:nth-child(2) {
+.loader > div:nth-child(2) {
   height: 45px;
   width: 45px;
   background-image: linear-gradient(45deg, #00d7f7, #04c0f5);
@@ -63,7 +49,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(15px, -20px) scale(0.55);
   }
 }
-#loading > div:nth-child(3) {
+.loader > div:nth-child(3) {
   height: 75px;
   width: 75px;
   background-image: linear-gradient(45deg, #f60180, #f7014f);
@@ -79,7 +65,7 @@ n can be a number, a keyword, or a formula.
     transform: translate(30px, 30px) scale(0.3);
   }
 }
-#loading > div:nth-child(4) {
+.loader > div:nth-child(4) {
   height: 45px;
   width: 45px;
   background-image: linear-gradient(45deg, #da00f7, #b501f6);
